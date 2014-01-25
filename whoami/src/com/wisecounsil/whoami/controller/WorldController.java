@@ -2,7 +2,9 @@ package com.wisecounsil.whoami.controller;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputAdapter;
+import com.wisecounsil.whoami.gamestates.MenuState;
 import com.wisecounsil.whoami.utils.CameraHelper;
 
 public class WorldController extends InputAdapter {
@@ -43,6 +45,14 @@ public class WorldController extends InputAdapter {
 	
 	 @Override
 	 public boolean keyUp(int keycode){
-		 return false;
+		 if (keycode == Keys.ESCAPE || keycode == Keys.BACK) {
+			 backToMenu();
+			 }
+			 return false;
 	 }
+
+	private void backToMenu() {
+		// TODO Auto-generated method stub
+		game.setScreen(new MenuState(game));
+	}
 }
