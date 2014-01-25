@@ -4,6 +4,7 @@ import com.badlogic.gdx.Application;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
+import com.wisecounsil.whoami.gamestates.GameState;
 import com.wisecounsil.whoami.gamestates.MenuState;
 import com.wisecounsil.whoami.utils.Assets;
 
@@ -15,7 +16,7 @@ public class WhoAmI extends Game {
 		
 		Assets.instance.init(new AssetManager());
 		// Start game at menu screen
-		setScreen(new MenuState(this));
+		setScreen(new GameState(this));
 	}
 
 
