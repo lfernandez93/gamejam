@@ -32,6 +32,7 @@ public class GameState extends AbstractGameScreen {
 
 	@Override
 	public void render(float delta) {
+		
 		if(!paused){
 			worldController.update(delta);
 		}
