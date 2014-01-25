@@ -4,6 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL10;
 import com.wisecounsil.whoami.AbstractGameScreen;
+import com.wisecounsil.whoami.utils.Assets;
 
 public class MenuState extends AbstractGameScreen {
 
@@ -15,6 +16,7 @@ public class MenuState extends AbstractGameScreen {
 
 	@Override
 	public void render(float delta) {
+		
 		Gdx.gl.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 		if(Gdx.input.isTouched()){
