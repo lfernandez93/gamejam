@@ -19,7 +19,7 @@ public class MenuState extends AbstractGameScreen {
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 		if(Gdx.input.isTouched()){
 			Gdx.app.debug(TAG, "Touched");
-			//game.setScreen(new InGameState(game));
+			game.setScreen(new GameState(game));
 		}
 		// TODO Auto-generated method stub
 	}
