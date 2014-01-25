@@ -48,6 +48,7 @@ public class WhoAmI implements ApplicationListener {
 		
 		batch.setProjectionMatrix(camera.combined);
 		batch.begin();
+		sprite.rotate(1);
 		sprite.draw(batch);
 		batch.end();
 	}
